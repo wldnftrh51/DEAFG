@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deaf-Translate</title>
+    <link rel="stylesheet" href="css/deafTrans.css">
+</head>
+<body>
+    <div class="app">
+        <div class="home">
+            <header class="header-top">
+                <img src="assets/img/Logo2.png" alt="DeafGram Logo" class="logo">
+                <h1>Deaf-Translate</h1>
+            </header>
+            <main>
+                <div class="buttons feature-button">
+                    <button id="juru-button" class="juru-button">
+                        <img src="assets/img/deafTrans/juru.png" alt="Layanan Juru Bahasa Isyarat Online">
+                    </button>
+                    <button id="cameraButton">
+                        <img src="assets/img/deafTrans/camera.png" alt="Camera">
+                    </button>
+                </div>
+                <div class="main-button">
+                    <button class="voice-button">
+                        <img src="assets/img/deafTrans/sound.png" alt="Voice">
+                    </button>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button class="search-button">
+                        <img src="assets/nav/search.png" alt="Search">
+                    </button>
+                </div>
+                <div class="video-container" style="display: none; flex-direction: column; align-items: center;">
+                    <video id="cameraStream" autoplay></video>
+                    <button id="stopCameraButton">Stop Camera</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <nav class="bottom-nav">
+            <button id="transButton" type="button"><img src="assets/nav/Trans.png" alt="deafTrans"></button>
+            <button id="talkButton" type="button"><img src="assets/nav/Talk.png" alt="deafTalk"></button>
+            <button id="homeButton" type="button"><img src="assets/nav/Home.png" alt="deafHome"></button>
+            <button id="studButton" type="button"><img src="assets/nav/Stud.png" alt="deafStud"></button>
+        </nav>
+    </footer>
+    <script src="js/deafTrans.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style2.css"> <!-- Memuat file CSS -->
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img class="login-img" src="assets/img/User.png" alt="Logo">
+            <h2>SIGN IN</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="text" id="username" name="username" placeholder="USERNAME/EMAIL" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="PASSWORD" required>
+                    </div>
+                </div>
+                <button type="submit" class="button-login" id="loginButton">LOGIN</button>
+            </form>
+        </div>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a> <!-- Link forgot password -->
+        </div>
+        <div class="social-login">
+            <p>Sign in with:</p>
+            <!-- Tambahkan tag <a> dengan href yang sesuai untuk masing-masing ikon sosial media -->
+            <a href="https://example.com/google-login">
+                <img src="assets/img/Google.png" alt="Google Icon">
+            </a>
+            <a href="https://example.com/facebook-login">
+                <img src="assets/img/Facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://example.com/instagram-login">
+                <img src="assets/img/Instagram.png" alt="Instagram Icon">
+            </a>
+            <a href="https://example.com/x-login">
+                <img src="assets/img/X.png" alt="X Icon">
+            </a>
+        </div>
+        <div class="sign-up">
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

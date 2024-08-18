@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/deafProfil.css"> <!-- Link ke file CSS -->
+</head>
+<body>
+    <div class="profile-container">
+        <div class="header">
+            <button class="back-button" onclick="goBack()">&lt;</button>
+            <h1 class="username">_jnaidi</h1>
+            <button class="menu-button" onclick="openSettings()">&#9776;</button>
+        </div>
+        <div class="profile-info">
+            <div class="profile-pic">
+                <img src="assets/img/deafHome/user7.jpeg" alt="User Profile Picture">
+            </div>
+            <div class="profile-stats">
+                <div class="stats">
+                    <span class="followers">100K</span><br>
+                    <span>Pengikut</span>
+                </div>
+                <div class="stats">
+                    <span class="following">500</span><br>
+                    <span>Mengikuti</span>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('postingan')">Postingan</button>
+            <button class="tab" onclick="showTab('balasan')">Balasan</button>
+            <button class="tab" onclick="showTab('suka')">Suka</button>
+        </div>
+        <div class="content">
+            <div class="posts tab-content" id="postingan">
+                <div class="post">
+                    <h2>Ayo Belajar Sibi</h2>
+                    <img src="assets/img/deafHome/sibi.jpeg" alt="Sibi">
+                </div>
+                <div class="post">
+                    <h2>Info Loker !!</h2>
+                    <p>Dibutuhkan segera karyawan/karyawati PT. Akhsan Mar, dengan Kriteria:</p>
+                    <ul>
+                        <li>Berpenampilan Menarik</li>
+                        <li>Punya Kendaraan Pribadi</li>
+                        <li>Mampu Berbahasa Isyarat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="replies tab-content" id="balasan" style="display:none;">
+                <p>Balasan pengguna akan ditampilkan di sini.</p>
+            </div>
+            <div class="likes tab-content" id="suka" style="display:none;">
+                <p>Post yang disukai akan ditampilkan di sini.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/deafProfil.js"></script>
+    
+</body>
+</html>
